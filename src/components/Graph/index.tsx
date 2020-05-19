@@ -132,6 +132,7 @@ class GraphComponent extends React.Component<GraphProps, GraphState> {
   }
 
   changeData(data: any) {
+    console.info('changeData');
     const { graph } = this;
     const { parseData } = this.props;
 

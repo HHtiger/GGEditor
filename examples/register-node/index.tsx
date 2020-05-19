@@ -13,9 +13,9 @@ class Index extends React.Component {
           data={data}
           // graphConfig={{ defaultNode: { type: 'customNode' } }}
           // graphConfig={{ defaultNode: { type: 'customStartNode' } }}
-          graphConfig={{ defaultNode: { type: 'customInternalNode', size: 50 } }}
+          // graphConfig={{ defaultNode: { type: 'customInternalNode', size: 50 } }}
         />
-        <RegisterNode
+        {/* <RegisterNode
           name="customNode"
           config={{
             getCustomConfig(model) {
@@ -55,7 +55,7 @@ class Index extends React.Component {
             },
           }}
           extend="bizFlowNode"
-        />
+        /> */}
         <RegisterNode
           name="customInternalNode"
           config={{
@@ -89,9 +89,9 @@ class Index extends React.Component {
             },
             getAnchorPoints() {
               return [
-                [0.5, 0],
-                [0.5, 1],
-                [0, 0.5],
+                // [0.5, 0],
+                // [0.5, 1],
+                // [0, 0.5],
                 [1, 0.5],
               ];
             },
